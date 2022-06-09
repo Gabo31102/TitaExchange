@@ -1,7 +1,7 @@
 import { ethers } from 'ethers'
 import { setGlobalState } from '../store'
 
-import { contractAbi, contractAddress } from '../utils/constants'
+import { contractAbi, contractAddress } from '../utils/Constants'
 
 const { ethereum } = window
 
