@@ -8,7 +8,7 @@ export const AddTransactionCard = () => {
     const [modal] = useGlobalState('modal')
     const [connectedAccount] = useGlobalState('connectedAccount')
     const [address, setAddress] = useState('')
-    const [amount, setAmount] = useState('')
+    const [amount, setAmount] = useState('0.0005')
     const [remark, setRemark] = useState('')
     const [loading, setLoading] = useState(false)
   
@@ -84,7 +84,7 @@ export const AddTransactionCard = () => {
             step={0.0001}
             name="amount"
             placeholder="Monto (Eth)"
-            onChange={(e) => setAmount(e.target.value)}
+            //onChange={(e) => setAmount(e.target.value)}
             value={amount}
           />
         </div>
